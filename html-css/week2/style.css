@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #B0A990;
+}
+h1,h2{
+    text-align: center;
+    padding: 0.5em;
+}
+/*-----items-----*/
+.grid-item{
+  background-color: #4A5043;
+  color: #B0A990;
+  border: 1px solid #202030;
+  width: 24%;
+  height: 22vw;
+  margin: 0.5%;
+  box-sizing: border-box;
+}
+.grid-item:hover{
+  background-color: #FFCB47;
+  color: black;
+}
+li{
+  list-style-type: none;
+}
+h3{
+  text-align: center;
+  padding: 5px;
+  font-size: 1.5vw;
+}
+img{
+  width: 20vw;
+  display: block;
+  margin: 0 auto;
+}
+p{
+  text-align: justify;
+  padding: 5px;
+  font-size: 1vw;
+}
+/*----- just the first item-----*/
+ul li:nth-child(1){
+  width: 49%;
+  
+}
+/*-----Grid with floats-----*/
+#grid-floats .grid-item{
+  float: left;
+}
+#grid-floats{
+  background-color: #7D7461;
+  display: inline-block;
+}
+/*-----Grid with flexbox-----*/
+main section:nth-child(2){
+  clear: both;
+}
+#grid-flex .grid-item{
+  background-color: #4A5043;
+  color: #B0A990;
+}
+#grid-flex .grid-item:hover{
+  background-color: #FFCB47;
+  color: black;
+}
+#grid-flex{
+  background-color: #7D7461;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*-----media queries-----*/
+/* this is fo tablet*/
+@media screen and (max-width: 768px){
+  ul li:nth-child(-n+2){
+    width: 49%;
+  }
+  ul li:nth-child(+n+3){
+    width: 32.3%;
+  }
+}
+/* this is fo mobile phone*/
+@media screen and (max-width: 350px){
+  ul li:nth-child(1){
+    width: 99%;
+  }
+  ul li:nth-child(+n+2){
+    width: 49%;
+  }
+}
+
