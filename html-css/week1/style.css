@@ -1,0 +1,177 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+/*this will be te darkBlue*/
+#darkBlue{
+  font-family:Tahoma;
+  background-color: #1D7EC6;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flexBox{   
+  flex: 1 auto;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/* this is the RESUME Brand*/
+.resume{
+  font-size: 6em;
+  padding: 0px;
+  margin: 0px;
+}
+.resume div:nth-child(1){
+  position: relative;
+  display: block;
+  left: 0px;
+  top: 30px;
+}
+.resume div:nth-child(2){
+  position: relative;
+  left: 48px;
+  top: -86px;
+}
+.resume div:nth-child(3){
+  position: relative;
+  left: 0px;
+  top: -135px;
+}
+.resume div:nth-child(4){
+  position: relative;
+  left: 46px;
+  top: -240px;
+}
+.resume div:nth-child(5){
+  position: relative;
+  left: -5px;
+  top: -300px;
+}
+.resume div:nth-child(6){
+  position: relative;
+  left: 48px;
+  top: -401px;
+}
+/*this is my Profile Picture*/
+#proflePicture{
+  width: 25vw;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 0px;
+}
+/*this is Hello*/
+#hello{
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: auto;
+}
+#myName{
+  font-size: 1vw;
+  letter-spacing: 0.1vw;
+  margin-top: 0px;
+}
+#omid{
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 0px;
+}
+/*this is Hello*/
+#hello{
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 5vw; 
+}
+#myName{
+  margin: 0px;
+  text-align: center;
+  font-size: 0.9vw;
+  letter-spacing: 0.5vw;
+}
+#omid{
+  text-align: center;
+  font-size: 5vw;
+  margin: 0px;
+}
+/*this the menue bar*/
+#menu{
+    font-family:Tahoma;
+    list-style-type: none;
+    margin: 0;
+    background-color: #62ADF9;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#menu li a{
+  color: black;
+  font-size: 2vw;
+  text-decoration: none;
+  display: inline-block;
+  padding: 30px;
+}
+#menu li a:hover{
+  color: white;
+  background: #005295;
+}
+/*responsive*/
+@media screen and (max-width: 600px){
+  #darkBlue{
+    height: 200px;
+  }
+  /*this the menue bar*/
+  #menu{
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  #menu li a{
+    font-size: 5vw;
+    padding: 0;
+    margin: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+  }
+  /* this is the RESUME Brand*/
+  .resume{
+  font-size: 3em;
+  padding: 0px;
+  margin: 0px;
+  }
+  .resume div:nth-child(1){
+  position: relative;
+  display: block;
+  left: 0px;
+  top: 30px;
+  }
+  .resume div:nth-child(2){
+    position: relative;
+    left: 24px;
+    top: -28px;
+  }
+  .resume div:nth-child(3){
+    position: relative;
+    left: 0px;
+    top: -53px;
+  }
+  .resume div:nth-child(4){
+    position: relative;
+    left: 23px;
+    top: -106px;
+  }
+  .resume div:nth-child(5){
+    position: relative;
+    left: -3px;
+    top: -136px;
+  }
+  .resume div:nth-child(6){
+    position: relative;
+    left: 24px;
+    top: -187px;
+  }
+}
