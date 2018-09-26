@@ -1,0 +1,24 @@
+.element {
+  background: pink;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.element:after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-top: 5px solid black;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+.element:hover:after{
+  transition: 0.3s ease-out;
+  transform: translatey(25%);
+}
