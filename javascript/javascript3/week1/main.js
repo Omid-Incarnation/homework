@@ -25,7 +25,37 @@ fetch('https://gist.githubusercontent.com/pankaj28843/08f397fcea7c760a99206bcb0a
         console.log(goodMovies);
         console.log(averageMovies);
         console.log(badMovies);
-
+        
+        //Click buttons and get pieces of information
+        document.getElementById('goodButton').addEventListener('click', showGoodMovies);
+        document.getElementById('averageButton').addEventListener('click', showaverageMovies);
+        document.getElementById('badButton').addEventListener('click', showBadMovies);
+        
+        function showGoodMovies(){
+            let goodMoviesList = '';
+            goodMovies.forEach((goodTitles) => {
+                goodMoviesList += `<li>${goodTitles.title}</li>`
+            });
+            document.getElementById('goodMoviesUl').innerHTML = goodMoviesList;
+        };
+    
+        function showaverageMovies(){
+            let averageMoviesList = '';
+            averageMovies.forEach((averageTitles) => {
+                averageMoviesList += `<li>${averageTitles.title}</li>`
+            });
+            document.getElementById('averageMoviesUl').innerHTML = averageMoviesList;
+        }
+    
+        function showBadMovies(){
+            let badMoviesList = '';
+            badMovies.forEach((badTitles) => {
+                badMoviesList += `<li>${badTitles.title}</li>`
+            });
+            document.getElementById('badMoviesUl').innerHTML = badMoviesList;
+        }
+    
+    
     
         //Calculate the average rating of all the movies
         let allRating = movies.map(getRating => getRating.rating);
@@ -65,6 +95,15 @@ fetch('https://gist.githubusercontent.com/pankaj28843/08f397fcea7c760a99206bcb0a
     
         const _80sMovie = movies.filter(get80sMovies)
         console.log(_80sMovie);
+    
+        document.getElementById('80sButton').addEventListener('click', show80sMovies);
+        function show80sMovies(){
+            let _80sMoviesList = '';
+            _80sMovie.forEach((_80sTitles) => {
+                _80sMoviesList += `<li>${_80sTitles.title}</li>`
+            });
+            document.getElementById('80sMoviesUl').innerHTML = _80sMoviesList;
+        }
 });
 
 
