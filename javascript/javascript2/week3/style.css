@@ -1,3 +1,11 @@
 #curriculum{
     color: red;
 }
+
+
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
